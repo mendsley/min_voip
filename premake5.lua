@@ -13,6 +13,7 @@ group "depend"
 
 dofile "tiny/premake/tiny.lua"
 dofile "tiny/3rdparty/opus.lua"
+dofile "tiny/3rdparty/webrtc.lua"
 group "depend"
 location ".generated"
 
@@ -33,6 +34,7 @@ project "test"
 	links {
 		"opus",
 		"tiny",
+		"webrtc",
 		"winmm",
 		"ws2_32",
 	}
