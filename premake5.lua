@@ -12,6 +12,7 @@ solution "min_voip"
 group "depend"
 
 dofile "tiny/premake/tiny.lua"
+dofile "tiny/3rdparty/opus.lua"
 group "depend"
 location ".generated"
 
@@ -30,6 +31,7 @@ project "test"
 		"main.cpp"
 	}
 	links {
+		"opus",
 		"tiny",
 		"winmm",
 		"ws2_32",
