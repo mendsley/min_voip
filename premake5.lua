@@ -1,5 +1,3 @@
-dofile "MUST_EDIT_OVR_DIR.lua"
-
 solution "ovr_audio_test"
 	configurations {
 		"Debug",
@@ -28,17 +26,12 @@ project "test"
 
 	includedirs {
 		"tiny/include",
-		OVR_SDK_DIR .. "LibOVR/Include/",
-	}
-	libdirs {
-		OVR_SDK_DIR .. "LibOVR/Lib/Windows/x64/Release/" .. _ACTION,
 	}
 	files {
 		"main.cpp"
 	}
 	links {
 		"tiny",
-		"LibOVR",
 		"winmm",
 		"ws2_32",
 	}
