@@ -1,4 +1,4 @@
-solution "ovr_audio_test"
+solution "min_voip"
 	configurations {
 		"Debug",
 	}
@@ -17,7 +17,7 @@ group "depend"
 location ".generated"
 
 -- Test project
-solution "ovr_audio_test"
+solution "min_voip"
 project "test"
 	group ""
 	kind "ConsoleApp"
@@ -36,5 +36,5 @@ project "test"
 		"ws2_32",
 	}
 
-solution "ovr_audio_test"
+solution "min_voip"
 startproject "test"
