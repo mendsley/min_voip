@@ -26,7 +26,7 @@
 #include "webrtc/common_audio/include/audio_util.h"
 #include "webrtc/common_audio/window_generator.h"
 
-#if defined(_MSC_VER) && _MCS_VER <= 1700
+#if defined(_MSC_VER) && _MSC_VER <= 1700
 static inline float fmaf(float a, float b, float c)
 {
 	return a*b+c;
