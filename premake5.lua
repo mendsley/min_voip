@@ -5,9 +5,8 @@ solution "min_voip"
 	platforms {
 		"x64",
 	}
-	flags {
-		"Symbols",
-	}
+
+	symbols "Full"
 
 -- Dependency: tiny
 group "depend"
