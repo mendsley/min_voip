@@ -58,7 +58,7 @@ bool IsThreadRefEqual(const PlatformThreadRef& a, const PlatformThreadRef& b) {
 }
 
 void SetCurrentThreadName(const char* name) {
-  RTC_DCHECK(strlen(name) < 64);
+  //RTC_DCHECK(strlen(name) < 64);
 #if defined(WEBRTC_WIN)
   struct {
     DWORD dwType;
